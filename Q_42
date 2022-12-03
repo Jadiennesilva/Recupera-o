@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main(){
+	
+	setlocale(LC_ALL, "portuguese_Brazil");
+	
+ 
+	
+	int Numero_EMPREGADO, NACIMENTO, INGRESO, idade, tempo_empregado;
+	
+	
+	
+	printf("digite o ano do seu nacimento: \n");
+	scanf("%d", &NACIMENTO);
+	
+	printf("qual o ano do seu ingresso: \n");
+	scanf("%d", &INGRESO);
+	
+	idade = (2022 - NACIMENTO);
+	tempo_empregado = (2022 - INGRESO);
+	
+
+	printf("nacimento: %.2d \n", idade);	
+	printf("ingreso: %.2d \n", tempo_empregado);
+	
+	
+	if(idade >= 65 || tempo_empregado >= 30){
+    printf("Requerer aposentadoria. \n");
+	
+	}else if (idade >= 60 && tempo_empregado >= 25){
+	printf ("Requerer aposentadoria. \n");
+
+}else{
+	printf ("Não requerer. \n");
+}
+	
+	
+	
+	return 0; 
+}
