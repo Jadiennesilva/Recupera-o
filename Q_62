@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main(){
+	
+	setlocale(LC_ALL, "portuguese_Brazil");
+	
+	int Q_alunos;
+	float notas_Alunos, media, N_aglomeradas;
+	
+	printf("digite a quantidade de alunos.\n ");
+	scanf("%d",&Q_alunos);
+	
+	for(int i=1; i <= Q_alunos; i++){
+	printf("digite a nota do aluno %d",i);
+	scanf("%f", &notas_Alunos);	
+	
+	N_aglomeradas = N_aglomeradas + notas_Alunos;	
+} 
+ 
+ 
+ 
+ media = N_aglomeradas / Q_alunos;
+   
+	printf("media: %f \n", media);	
+
+	return 0; 
+}
